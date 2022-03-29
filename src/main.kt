@@ -3,7 +3,7 @@ var x=multipleArray(arrayOf(22,11))
     println(x)
     var y=getsum(arrayOf(2,3.4,5.5,"Lark",7.1F))
     println(y)
-    var z=novowels(arrayOf('a','j','g','e','i','k'))
+    var z=novowels(arrayOf('b','j','g','e','i','k'))
     println(z)
 
 }
@@ -18,7 +18,7 @@ fun multipleArray(numbers:Array<Int>):Int{
 fun getsum(mixedArray:Array<Any>):Double{
     var sum=0.0
     mixedArray.forEach{num ->
-        if (num is Double )
+        if (num is String)
             sum+=num
     }
     return (sum)
